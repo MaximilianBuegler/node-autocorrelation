@@ -3,36 +3,36 @@ Autocorrelation library for node.js
 
 # Simple Example
 
-var autocorrelation = require('autocorrelation').autocorrelation;
+    var autocorrelation = require('autocorrelation').autocorrelation;
 
-var signal=[1,0,1,0,1,0,1,0];
+    var signal=[1,0,1,0,1,0,1,0];
 
-var acf = autocorrelation(signal);
+    var acf = autocorrelation(signal);
 
-console.log(acf);
+    console.log(acf);
 
 # Testing
 
 Using Mocha:
 
-  mocha
+    mocha
 
 Or:
 
-  npm test
+    npm test
 
 Output:
 
-  Autocorrelation
-    1,0,1,0,1,0,1,0
-      ✓ Should properly compute [1,0,1,0,1,0,1,0]
-    1,1,1,1,0,0,0,0
-      ✓ Should properly compute [1,1,1,1,0,0,0,0]
-    1,1,1,1,1,1,1,1
-      ✓ Should properly compute [1,1,1,1,1,1,1,1]
+    Autocorrelation
+      1,0,1,0,1,0,1,0
+        ✓ Should properly compute [1,0,1,0,1,0,1,0]
+      1,1,1,1,0,0,0,0
+        ✓ Should properly compute [1,1,1,1,0,0,0,0]
+      1,1,1,1,1,1,1,1
+        ✓ Should properly compute [1,1,1,1,1,1,1,1]
 
 
-  3 passing (13ms)
+    3 passing (13ms)
 
 # License
 
