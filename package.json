@@ -1,5 +1,5 @@
 {
-  "name": "Autocorrelation",
+  "name": "autocorrelation",
   "version": "0.0.1",
   "description": "Simple pure Javascript implementation of autocorrelation based on fft",
   "license": "MIT",
