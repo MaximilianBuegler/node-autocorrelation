@@ -1,3 +1,16 @@
+/*===========================================================================*\
+ * Autocorrelation algorithm based on description by Thibauld Nion
+ * http://www.tibonihoo.net/literate_musing/autocorrelations.html
+ *
+ * (c) 2016 Maximilian Bügler
+ *
+ * Test setup adapted from fft-js in https://github.com/vail-systems/node-fft
+ * (c) Vail Systems. Joshua Jung and Ben Bryan. 2015
+ *
+ *===========================================================================*/
+
+
+
 var assert = require('assert'),
     autocorrelation = require('../').autocorrelation;
 
