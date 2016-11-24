@@ -1,0 +1,31 @@
+{
+  "name": "Autocorrelation",
+  "version": "0.0.1",
+  "description": "Simple pure Javascript implementation of autocorrelation based on fft",
+  "license": "MIT",
+  "homepage": "https://github.com/MaximilianBuegler/node-autocorrelation",
+  "repository": "MaximilianBuegler/node-autocorrelation",
+  "contributors": [
+    "Maximilian Buegler <max@maxbuegler.eu> (http://www.maxbuegler.eu/)"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "autocorrelation.js",
+    "src",
+    "test"
+  ],
+  "keywords": [
+    "autocorrelation",
+    "dsp",
+    "audio",
+    "motion",
+    "pedometer"
+  ],
+  "dependencies": {
+    "fft-js": "~0.0.10"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
