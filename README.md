@@ -1,6 +1,9 @@
 # node-autocorrelation
 Autocorrelation library for node.js
 
+Based on the description by Thibauld Nion
+http://www.tibonihoo.net/literate_musing/autocorrelations.html
+
 # Simple Example
 
     var autocorrelation = require('autocorrelation').autocorrelation;
