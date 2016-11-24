@@ -1,8 +1,15 @@
 # node-autocorrelation
 Autocorrelation library for node.js
 
-Based on the description by Thibauld Nion
+# Credits
+Based on the description by Thibauld Nion:
+
 http://www.tibonihoo.net/literate_musing/autocorrelations.html
+
+Using the FFT library fft-js:
+
+https://github.com/vail-systems/node-fft
+
 
 # Simple Example
 
