@@ -10,6 +10,14 @@ var fft = require('fft-js').fft;
 var ifft = require('fft-js').ifft;
 
 module.exports = {
+    
+    /**
+     * Calculates the autocorrelation of the provided signal
+     *
+     * @param {1D array} signal 1D time series of values (for instance acceleration)
+     * @returns {1D array} an array of autocorrelation values for each time lag
+     *
+     **/
     autocorrelation: function autocorrelation(signal) {
         
         var n=signal.length;
