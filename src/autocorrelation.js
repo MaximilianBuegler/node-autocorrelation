@@ -1,6 +1,3 @@
-var fft = require('fft-js').fft;
-var ifft = require('fft-js').ifft;
-
 /*===========================================================================*\
  * Autocorrelation algorithm based on description by Thibauld Nion
  * http://www.tibonihoo.net/literate_musing/autocorrelations.html
@@ -9,6 +6,8 @@ var ifft = require('fft-js').ifft;
  *
  *===========================================================================*/
 
+var fft = require('fft-js').fft;
+var ifft = require('fft-js').ifft;
 
 module.exports = {
     autocorrelation: function autocorrelation(signal) {
