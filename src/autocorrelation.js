@@ -44,7 +44,7 @@ module.exports = {
             }
         }
 
-        var acv=autocovariance(signal);
+        var acv=autocovariance(paddedSignal);
         
         var variance=acv[0];
         
