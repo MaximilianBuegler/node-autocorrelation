@@ -8,6 +8,8 @@
 
 var fft = require('fft-js').fft;
 var ifft = require('fft-js').ifft;
+var nextpow2 = require('bit-twiddle').nextPow2;
+
 
 module.exports = {
     
@@ -22,6 +24,26 @@ module.exports = {
         
         var n=signal.length;
         
+        var i;
+        
+        var n2=nextpow2(n);
+        
+        var paddedSignal=[];
+        
+        if (n==n2){
+            paddedSignal=signal;
+        }
+        else{
+            for (i=0;i<n2;i++){
+                if (i<n){
+                    paddedSignal[i]=signal[i];
+                }
+                else{
+                    paddedSignal[i]=0;
+                }
+            }
+        }
+
         var acv=autocovariance(signal);
         
         var variance=acv[0];
