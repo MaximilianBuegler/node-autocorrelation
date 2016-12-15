@@ -20,6 +20,8 @@ https://github.com/vail-systems/node-fft
     var acf = autocorrelation(signal);
 
     console.log(acf);
+    
+returns: [ 1, -1, 1, -1, 1, -1, 1, -1 ]
 
 # Testing
 
