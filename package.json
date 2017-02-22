@@ -1,6 +1,6 @@
 {
   "name": "autocorrelation",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple pure Javascript implementation of autocorrelation based on fft",
   "license": "MIT",
   "homepage": "https://github.com/MaximilianBuegler/node-autocorrelation",
