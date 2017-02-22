@@ -27,6 +27,10 @@ module.exports = {
         var i;
         
         var n2=nextpow2(n);
+
+	if (n===0){
+	    n2=0;
+	}
         
         var paddedSignal=[];
         
@@ -68,7 +72,7 @@ module.exports = {
             
             var n=signal.length;
             
-            if (n==0)
+            if (n===0)
                 return [];
             
             var mean=0;

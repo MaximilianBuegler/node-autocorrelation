@@ -34,6 +34,18 @@ describe('Autocorrelation', function () {
             check(acf,[0,0,0,0,0,0,0,0],0.01);
         });
     });
+    describe('1,1,1,1,1,1,1,1,1', function () {
+        it('Should properly compute [1,1,1,1,1,1,1,1,1]', function () {
+            var acf = autocorrelation([1,1,1,1,1,1,1,1,1]);
+            check(acf,[ 1,  0.8624338624338623,  0.7052154195011339,  0.5238095238095238,  0.31216931216931226,  0.06204906204906214,  -0.23809523809523792,  -0.6049382716049381,  -0.7777777777777775 ],0.01);
+        });
+    });
+    describe('Empty input', function () {
+        it('Should return empty output', function () {
+            var acf = autocorrelation([]);
+            check(acf,[],0);
+        });
+    });
 
 });
 
