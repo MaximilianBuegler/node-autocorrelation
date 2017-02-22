@@ -1,6 +1,11 @@
 # node-autocorrelation
 Autocorrelation library for node.js
 
+# Build status
+
+[![Build Status](https://travis-ci.org/MaximilianBuegler/node-autocorrelation.svg?branch=master)](https://travis-ci.org/MaximilianBuegler/node-autocorrelation)
+[![Coverage Status](https://coveralls.io/repos/github/MaximilianBuegler/node-autocorrelation/badge.svg?branch=master)](https://coveralls.io/github/MaximilianBuegler/node-autocorrelation?branch=master)
+
 # Credits
 Based on the description by Thibauld Nion:
 
